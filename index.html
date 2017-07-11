@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style media="screen">
+            body {
+                font-family: monospace;
+            }
+
+            em {
+                font-style: normal;
+            }
+
+            strong {
+                font-weight: normal;
+            }
+
+            .serif {
+                font-family: serif;
+            }
+
+            .sans-serif {
+                font-family: sans-serif;
+            }
+
+            .cursive {
+                font-family: cursive;
+            }
+
+            .fantasy {
+                font-family: fantasy;
+            }
+            .comic-sans {
+                font-family: "Comic Sans MS"
+            }
+        </style>
+        <script src="shovelry.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="shovelry.css">
+    </head>
+    <body>
+        <h1>For Shovelry!</h1>
+        <p>Shovelry.js is a tiny library to add Shovel Knight-themed <strong>strong</strong> and <em>emphasis</em> text to any page.</p>
+        <h2>Usage</h2>
+        <pre><code>
+&lt;script src="shovelry.js" charset="utf-8"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" href="shovelry.css"&gt;
+
+&lt;p&gt;
+    Why is it called the &lt;em&gt;Dark Ages&lt;/em&gt;?
+    Because there's no shortage of &lt;strong&gt;knights!&lt;/strong&gt;"
+&lt;/p&gt;
+
+&lt;script type="text/javascript"&gt;
+    shovelry();
+&lt;/script&gt;
+    </code></pre>
+        <h2>Options</h2>
+        <pre><code>
+shovelry({
+
+});
+        </code></pre>
+        <h2>FAQ</h2>
+        <p>Does it work with non-monospaced text?</p>
+        <p>Sure does! <strong class="serif">Serifed</strong>, <em class="sans-serif">sans-serifed</em>, <strong class="fantasy">fantasy</strong>, <em class="cursive">cursive</em>, even <strong class="comic-sans">Comic Sans</strong>!</p>
+        <p>Why does mine still have the bold/italics on the text?</p>
+        <p>I've pulled off the `font-style` and `font-weight` styles on this page to make it a little more Shovel Knight-ly. You can do it yourself by just setting some `em { font-style: normal; }` and `strong { font-weight: normal; }` styles on your page.</p>
+        <script type="text/javascript">
+            shovelry();
+        </script>
+    </body>
+</html>
