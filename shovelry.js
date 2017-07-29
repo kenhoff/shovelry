@@ -4,7 +4,6 @@ var shovelry = function(options) {
 		var delay = 0;
 		for (var char of element.textContent) {
 			var newElement = document.createElement("span");
-			console.log(char);
 			if (char == " ") {
 				newElement.innerHTML = "&nbsp;"
 			} else {
